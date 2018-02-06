@@ -24,17 +24,25 @@ console.log(linearSearch(6, random_numbers));
 // 0
 
 // Release 1
-// console.log("Global Linear Search")
-// let globalLinearSearch = (target, values) => {
-//   //write your code here
-// }
+console.log("Global Linear Search")
+let globalLinearSearch = (target, values) => {
+  let result = [];
 
-// let banana_arr = "banana".split("");
-// // ["b", "a", "n", "a", "n", "a"]
-// console.log(globalLinearSearch("a", banana_arr));
-// // [ 1, 3, 5 ]
+  for(let i = 0; i < banana_arr.length; i++) {
+    if(target === banana_arr[i]) {
+      result.push(i);
+    }
+  }
 
-// module.exports = {
-//   linearSearch,
-//   globalLinearSearch
-// }
+  return result;
+}
+
+let banana_arr = "banana".split("");
+// ["b", "a", "n", "a", "n", "a"]
+console.log(globalLinearSearch("a", banana_arr));
+// [ 1, 3, 5 ]
+
+module.exports = {
+  linearSearch,
+  globalLinearSearch
+}
