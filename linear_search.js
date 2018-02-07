@@ -4,18 +4,15 @@ function linearSearch(input) {
   for(var i=0;i<random_numbers.length;i++)
   {
     if(input===random_numbers[i])
-    {
-      hit++;
-    }
+      {
+        hit++;
+      }
   }
   if(hit>0)
-  {
-    return hit;
-  }
-  else
-  {
+    {
+      return hit;
+    }
     return -1;
-  }
 }
 
 console.log(linearSearch(18));
@@ -27,9 +24,9 @@ function globalLinearSearch(cari,input) {
   for(var i=0;i<=input.length;i++)
   {
     if(cari===input[i])
-    {
-      temp.push(i);
-    }
+      {
+        temp.push(i);
+      }
   }
   return temp;
 }
